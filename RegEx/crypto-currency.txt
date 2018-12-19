@@ -2,7 +2,7 @@ Here are some regex expressions to find cryptocurrency wallet addresses.  These 
 bomb hoax, <insert new scheme> variety.  Potentially useful for hunting in your proxy logs for cryptomining activity as well.
 
 Litecoin:            /(\s|^)[LM3][a-km-zA-HJ-NP-Z1-9]{26,33}(\s|$)/ig
-Bitcoin:             /(\s|^)[1|3][a-km-zA-HJ-NP-Z0-9]{26,34}(\s|$)/ig
+Bitcoin:             /(\s|^)[1|3][a-km-zA-HJ-NP-Z1-9]{26,34}(\s|$)/ig
 Ethereum:            /(\s|^)0x[a-fA-F0-9]{40}(\s|$)/ig
 Monero:              /(\s|^)4[0-9A-B][a-zA-Z0-9]{93}(\s|$)/ig
 Dogecoin:            /(\s|^)D{1}[5-9A-HJ-NP-U]{1}[1-9A-HJ-NP-Za-km-z]{32}(\s|$)/ig
