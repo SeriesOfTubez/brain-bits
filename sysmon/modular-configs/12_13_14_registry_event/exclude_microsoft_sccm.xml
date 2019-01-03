@@ -27,7 +27,7 @@
       <RegistryEvent onmatch="exclude">
 		<!--Microsoft:SCCM Agent Service-->
 		<Image condition="is">C:\WINDOWS\CCM\CcmExec.exe</Image>
-	  </RegistryEvent>
+      </RegistryEvent>
       <!-- Event ID 15 == FileStream Created. -->
       <FileCreateStreamHash onmatch="include"/>
       <!-- Event ID 17,18 == PipeEvent. Log Named pipe created & Named pipe connected -->
