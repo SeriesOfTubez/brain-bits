@@ -47,6 +47,10 @@
 		<Image condition="begin with">C:\Program Files\Common Files\McAfee\Engine\scanners</Image>
 		<!--McAfee:MCShield-->
 		<Image condition="is">C:\Program Files\Common Files\McAfee\AVSolution\mcshield.exe</Image>
+		<!--McAfee:DLP Agent-->
+		<Image condition="is">C:\Program Files\McAfee\DLP\Agent\fcags.exe</Image>
+		<!--McAfee:Undocumented but appears to be a temp key related to McAfee performing driver updates-->
+		<TargetObject condition="is">HKLM\System\CurrentControlSet\Services\mfeavfk01\ImagePath</TargetObject>
 	  </RegistryEvent>
       <!-- Event ID 15 == FileStream Created. -->
       <FileCreateStreamHash onmatch="include"/>
